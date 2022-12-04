@@ -11,10 +11,11 @@ app.use(bodyParser.json());
 app.use(cors())
 
 const connection = mysql.createConnection({
-    host: 'hankyung-project.ckb8qirnyrnb.ap-northeast-2.rds.amazonaws.com',
-    user: 'admin',
-    password: 'tkdwls1!',
-    database: 'hankyung_project',
+    host: '127.0.0.1',
+    user: 'sangjin',
+    password: 'sangjin',
+    port: '3306',
+    database: 'carpooltaxi',
   });
 
 
@@ -23,9 +24,10 @@ const connection = mysql.createConnection({
 // useid가 true인지 false인지를 통해 id확인을 하고
 // 비밀번호도 일치한다면 sessionStorage.setItem("key",value)로 세션에 아이디값을 저장하게 된다
 app.get('/api/login',(req,res)=>{
-    connection.query('SELECT * FROM user', function(err,rows,fields){
+    connection.query('SELECT * FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
         res.send(rows)
+        console.log(rows)
         // console.log(rows);
     })
 })
@@ -43,8 +45,8 @@ app.get('/api/login',(req,res)=>{
 
 // AddLogin에서 useridCheck
 // 회원가입 할 때 중복확인용 get
-app.get('/api/login/userid',(req,res)=>{
-    connection.query('SELECT userId FROM user', function(err,rows,fields){
+app.get('/api/login/userId',(req,res)=>{
+    connection.query('SELECT userId FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
         res.send(rows)
     })
@@ -56,7 +58,7 @@ app.get('/api/login/userid',(req,res)=>{
 // usableID값이 true면 비밀번호 확인 후 맞으면 회원정보 넘겨받음
 app.post('/api/login',(req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
-    let sql = 'INSERT INTO user VALUES (?,?,?,?,?,?,?,?)';
+    let sql = 'INSERT INTO users VALUES (?,?,?,?,?,?,?,?)';
     let userId = req.body.userId
     let password = req.body.password
     let name = req.body.name
