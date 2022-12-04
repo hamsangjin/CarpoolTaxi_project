@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 app.use(cors())
 
+// 데이터베이스 연결
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'sangjin',
@@ -30,18 +31,8 @@ app.get('/api/login',(req,res)=>{
 })
 
 
-// 이것들 필요없는거 같음
-
-// app.get('/api/login/email',(req,res)=>{
-//     connection.query('SELECT Email FROM addlogin', function(err,rows,fields){
-//         res.header("Access-Control-Allow-Origin", "*");
-//         res.send(rows)
-//     })
-// })
-
-
-// 회원가입 할 때 Id 중복확인용
-app.get('/api/login/userId',(req,res)=>{
+// 회원가입 할 때 ID 중복확인용
+app.get('/api/signUp/userId',(req,res)=>{
     connection.query('SELECT userId FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
         res.send(rows)
@@ -50,7 +41,7 @@ app.get('/api/login/userId',(req,res)=>{
 
 
 // 회원가입 정보 추가
-app.post('/api/login',(req,res)=>{
+app.post('/api/signUp',(req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
     let sql = 'INSERT INTO users VALUES (?,?,?,?,?,?,?,?)';
     let userId = req.body.userId
@@ -68,24 +59,6 @@ app.post('/api/login',(req,res)=>{
           res.send(rows);
     })
 })
-
-// app.post('/api/login',(req,res)=>{
-//     res.header("Access-Control-Allow-Origin", "*");
-//     let sql = 'INSERT INTO addlogin VALUES (?,?,?)';
-//     let userId = req.body.userId
-//     let PW = req.body.password
-//     let Email = req.body.email
-//     let params = [userId, PW, Email]
-//     connection.query(sql, params,
-//         (err, rows, fields) => {
-//           res.header("Access-Control-Allow-Origin", "*");
-//           res.send(rows);
-//           console.log(err)
-//           console.log(rows)
-//     })
-// })
-
-
 
 
 // carpool
