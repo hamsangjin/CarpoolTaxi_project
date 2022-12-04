@@ -19,10 +19,7 @@ const connection = mysql.createConnection({
   });
 
 
-// Login.js의 checkLogin에서 get
-// 회원 정보 다 불러옴
-// useid가 true인지 false인지를 통해 id확인을 하고
-// 비밀번호도 일치한다면 sessionStorage.setItem("key",value)로 세션에 아이디값을 저장하게 된다
+// login할 때 회원 정보 다 불러오기
 app.get('/api/login',(req,res)=>{
     connection.query('SELECT * FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
@@ -43,8 +40,7 @@ app.get('/api/login',(req,res)=>{
 // })
 
 
-// AddLogin에서 useridCheck
-// 회원가입 할 때 중복확인용 get
+// 회원가입 할 때 Id 중복확인용
 app.get('/api/login/userId',(req,res)=>{
     connection.query('SELECT userId FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
@@ -53,9 +49,7 @@ app.get('/api/login/userId',(req,res)=>{
 })
 
 
-// userIdCheck에서 id중복확인을 통해 setUsableID를 true/false를 정하고
-// addlogin.js에서 handleFormSubmit에서 post
-// usableID값이 true면 비밀번호 확인 후 맞으면 회원정보 넘겨받음
+// 회원가입 정보 추가
 app.post('/api/login',(req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
     let sql = 'INSERT INTO users VALUES (?,?,?,?,?,?,?,?)';
