@@ -32,7 +32,7 @@ app.get('/api/login',(req,res)=>{
 
 
 // 회원가입 할 때 ID 중복확인용
-app.get('/api/signUp/userId',(req,res)=>{
+app.get('/api/signup/userId',(req,res)=>{
     connection.query('SELECT userId FROM users', function(err,rows,fields){
         res.header("Access-Control-Allow-Origin", "*");
         res.send(rows)
@@ -41,7 +41,7 @@ app.get('/api/signUp/userId',(req,res)=>{
 
 
 // 회원가입 정보 추가
-app.post('/api/signUp',(req,res)=>{
+app.post('/api/signup',(req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
     let sql = 'INSERT INTO users VALUES (?,?,?,?,?,?,?,?)';
     let userId = req.body.userId
