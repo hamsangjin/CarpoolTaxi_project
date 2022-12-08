@@ -145,7 +145,7 @@ app.delete('/api/carpoolboard/:boardId', (req, res)=>{
 })
 
 // 게시글 동승자 삭제
-app.delete('/api/carpoolboard/:boarduserId', (req, res)=>{
+app.delete('/api/carpoolpassenger/:boarduserId', (req, res)=>{
     console.log(req.params.boarduserId)
     connection.query('DELETE FROM carpoolPassenger WHERE boarduserId = ?', req.params.boarduserId, function (error, rows, fields) {
         res.header("Access-Control-Allow-Origin", "*");
@@ -153,6 +153,7 @@ app.delete('/api/carpoolboard/:boarduserId', (req, res)=>{
         console.log(rows)
       })
 })
+
 
 // 택시 (driver, car 제외하고 구현하면 됨, 그리고 신청할 때 무조건 동승자임)
 
@@ -235,8 +236,8 @@ app.delete('/api/taxiboard/:boardId', (req, res)=>{
       })
 })
 
-// 게시글 동승자 삭제
-app.delete('/api/taxiboard/:boarduserId', (req, res)=>{
+// 동승자 삭제
+app.delete('/api/taxipassenger/:boarduserId', (req, res)=>{
     console.log(req.params.boarduserId)
     connection.query('DELETE FROM taxiPassenger WHERE boarduserId = ?', req.params.boarduserId, function (error, rows, fields) {
         res.header("Access-Control-Allow-Origin", "*");
