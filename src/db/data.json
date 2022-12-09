@@ -1,0 +1,1322 @@
+{
+  "passenger": [
+    {
+      "id": "12022330044",
+      "boardId": 1,
+      "userId": "2022330044"
+    },
+    {
+      "id": "12022332244",
+      "boardId": 1,
+      "userId": "2022332244"
+    }
+  ],
+  "taxipassenger": [
+    {
+      "id": "12022333311",
+      "boardId": 1,
+      "userId": "2022333311"
+    },
+    {
+      "id": "12022332244",
+      "boardId": 1,
+      "userId": "2022332244"
+    },
+    {
+      "id": "22022332244",
+      "boardId": 2,
+      "userId": "2022332244"
+    },
+    {
+      "id": "22022330044",
+      "boardId": 2,
+      "userId": "2022330044"
+    },
+    {
+      "id": "12018250233",
+      "boardId": "1",
+      "userId": "2018250233"
+    }
+  ],
+  "account": [
+    {
+      "id": "2022330044",
+      "name": "hamsangjin1",
+      "sex": "남",
+      "phoneNum": "11022224444",
+      "major": "컴퓨터 공학과"
+    },
+    {
+      "id": "2022332244",
+      "name": "hamsangjin2",
+      "sex": "남",
+      "phoneNum": "21022224444",
+      "major": "컴퓨터 공학과"
+    },
+    {
+      "id": "2022333311",
+      "name": "hamsangjin3",
+      "sex": "여",
+      "phoneNum": "31022224444",
+      "major": "컴퓨터 공학과"
+    },
+    {
+      "id": "2018250233",
+      "name": "dbrbqls12",
+      "sex": "남",
+      "phoneNum": "21022224433",
+      "major": "컴퓨터 공학과"
+    },
+    {
+      "id": "2018250033",
+      "name": "yoogyubin",
+      "sex": "남",
+      "phoneNum": "21022224224",
+      "major": "컴퓨터 공학과"
+    }
+  ],
+  "board": [
+    {
+      "id": 1,
+      "writer": "2018250033",
+      "title": "학교가자",
+      "startProvince": "경기도",
+      "startCity": "안성시",
+      "startDetail": "한경대 정문",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "평택시",
+      "arrivalDetail": "평택역",
+      "date": "20221115",
+      "time": "13:30",
+      "driver": "driver",
+      "maxPassenger": 4,
+      "car": "SUV",
+      "content": "hello world ㅎㅎ"
+    },
+    {
+      "id": 2,
+      "writer": "2018250033",
+      "title": "학교가려고",
+      "startProvince": "경기도",
+      "startCity": "평택시",
+      "startDetail": "평택역",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "안성시",
+      "arrivalDetail": "한경대 정문",
+      "date": "20221117",
+      "time": "17:30",
+      "driver": "passenger",
+      "maxPassenger": 4,
+      "car": "",
+      "content": "hello world ㅎㅎ"
+    },
+    {
+      "id": 3,
+      "writer": "2018250033",
+      "title": "학교가자",
+      "startProvince": "강원도",
+      "startCity": "원주시",
+      "startDetail": "원주시청",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "안성시",
+      "arrivalDetail": "한경대 정문",
+      "date": "20221117",
+      "time": "17:30",
+      "driver": "driver",
+      "maxPassenger": 4,
+      "car": "오토바이",
+      "content": "hello world ㅎㅎ"
+    }
+  ],
+  "taxiboard": [
+    {
+      "id": 1,
+      "writer": "2018250033",
+      "title": "학3교가자",
+      "startProvince": "경기도",
+      "startCity": "안성",
+      "startDetail": "한경대 정문",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "평택",
+      "arrivalDetail": "평택역",
+      "date": "20221115",
+      "time": "13:30",
+      "maxPassenger": 4,
+      "content": "hello world ㅎㅎ"
+    },
+    {
+      "id": 2,
+      "writer": "2018250033",
+      "title": "학교3가려고",
+      "startProvince": "경기도",
+      "startCity": "평택",
+      "startDetail": "평택역",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "안성",
+      "arrivalDetail": "한경대 정문",
+      "date": "20221117",
+      "time": "17:30",
+      "maxPassenger": 2,
+      "content": "hello world ㅎㅎ"
+    },
+    {
+      "id": 3,
+      "writer": "2018250033",
+      "title": "학교3가자",
+      "startProvince": "강원도",
+      "startCity": "원주",
+      "startDetail": "원주시청",
+      "arrivalProvince": "경기도",
+      "arrivalCity": "안성",
+      "arrivalDetail": "한경대 정문",
+      "date": "20221117",
+      "time": "17:30",
+      "maxPassenger": 4,
+      "content": "hello world ㅎㅎ"
+    }
+  ],
+  "Province": [
+    {
+      "id": 0,
+      "name": "서울"
+    },
+    {
+      "id": 1,
+      "name": "경기도"
+    },
+    {
+      "id": 2,
+      "name": "강원도"
+    },
+    {
+      "id": 3,
+      "name": "충청북도"
+    },
+    {
+      "id": 4,
+      "name": "충청남도"
+    },
+    {
+      "id": 5,
+      "name": "전라북도"
+    },
+    {
+      "id": 6,
+      "name": "전라남도"
+    },
+    {
+      "id": 7,
+      "name": "경상북도"
+    },
+    {
+      "id": 8,
+      "name": "경상남도"
+    }
+  ],
+  "City": [
+    {
+      "id": 0,
+      "province": 0,
+      "province_name": "서울",
+      "name": "종로구"
+    },
+    {
+      "id": 1,
+      "province": 0,
+      "province_name": "서울",
+      "name": "중구"
+    },
+    {
+      "id": 2,
+      "province": 0,
+      "province_name": "서울",
+      "name": "용산구"
+    },
+    {
+      "id": 3,
+      "province": 0,
+      "province_name": "서울",
+      "name": "성동구"
+    },
+    {
+      "id": 4,
+      "province": 0,
+      "province_name": "서울",
+      "name": "광진구"
+    },
+    {
+      "id": 5,
+      "province": 0,
+      "province_name": "서울",
+      "name": "동대문구"
+    },
+    {
+      "id": 6,
+      "province": 0,
+      "province_name": "서울",
+      "name": "중랑구"
+    },
+    {
+      "id": 7,
+      "province": 0,
+      "province_name": "서울",
+      "name": "성북구"
+    },
+    {
+      "id": 8,
+      "province": 0,
+      "province_name": "서울",
+      "name": "강북구"
+    },
+    {
+      "id": 9,
+      "province": 0,
+      "province_name": "서울",
+      "name": "도봉구"
+    },
+    {
+      "id": 10,
+      "province": 0,
+      "province_name": "서울",
+      "name": "노원구"
+    },
+    {
+      "id": 11,
+      "province": 0,
+      "province_name": "서울",
+      "name": "은평구"
+    },
+    {
+      "id": 12,
+      "province": 0,
+      "province_name": "서울",
+      "name": "서대문구"
+    },
+    {
+      "id": 13,
+      "province": 0,
+      "province_name": "서울",
+      "name": "마포구"
+    },
+    {
+      "id": 14,
+      "province": 0,
+      "province_name": "서울",
+      "name": "양천구"
+    },
+    {
+      "id": 15,
+      "province": 0,
+      "province_name": "서울",
+      "name": "강서구"
+    },
+    {
+      "id": 16,
+      "province": 0,
+      "province_name": "서울",
+      "name": "구로구"
+    },
+    {
+      "id": 17,
+      "province": 0,
+      "province_name": "서울",
+      "name": "금천구"
+    },
+    {
+      "id": 18,
+      "province": 0,
+      "province_name": "서울",
+      "name": "영등포구"
+    },
+    {
+      "id": 19,
+      "province": 0,
+      "province_name": "서울",
+      "name": "동작구"
+    },
+    {
+      "id": 20,
+      "province": 0,
+      "province_name": "서울",
+      "name": "관악구"
+    },
+    {
+      "id": 21,
+      "province": 0,
+      "province_name": "서울",
+      "name": "서초구"
+    },
+    {
+      "id": 22,
+      "province": 0,
+      "province_name": "서울",
+      "name": "강남구"
+    },
+    {
+      "id": 23,
+      "province": 0,
+      "province_name": "서울",
+      "name": "송파구"
+    },
+    {
+      "id": 24,
+      "province": 0,
+      "province_name": "서울",
+      "name": "강동구"
+    },
+    {
+      "id": 25,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "수원시"
+    },
+    {
+      "id": 26,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "인천광역시"
+    },
+    {
+      "id": 27,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "성남시"
+    },
+    {
+      "id": 28,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "의정부시"
+    },
+    {
+      "id": 29,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "안양시"
+    },
+    {
+      "id": 30,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "부천시"
+    },
+    {
+      "id": 31,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "광명시"
+    },
+    {
+      "id": 32,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "동두천시"
+    },
+    {
+      "id": 33,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "평택시"
+    },
+    {
+      "id": 34,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "안산시"
+    },
+    {
+      "id": 35,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "고양시"
+    },
+    {
+      "id": 36,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "과천시"
+    },
+    {
+      "id": 37,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "구리시"
+    },
+    {
+      "id": 38,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "남양주시"
+    },
+    {
+      "id": 39,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "오산시"
+    },
+    {
+      "id": 40,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "시흥시"
+    },
+    {
+      "id": 41,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "군포시"
+    },
+    {
+      "id": 42,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "의왕시"
+    },
+    {
+      "id": 43,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "하남시"
+    },
+    {
+      "id": 44,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "용인시"
+    },
+    {
+      "id": 45,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "파주시"
+    },
+    {
+      "id": 46,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "이천시"
+    },
+    {
+      "id": 47,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "안성시"
+    },
+    {
+      "id": 48,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "김포시"
+    },
+    {
+      "id": 49,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "화성시"
+    },
+    {
+      "id": 50,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "광주시"
+    },
+    {
+      "id": 51,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "양주시"
+    },
+    {
+      "id": 52,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "포천시"
+    },
+    {
+      "id": 53,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "여주시"
+    },
+    {
+      "id": 54,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "연천군"
+    },
+    {
+      "id": 55,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "가평군"
+    },
+    {
+      "id": 56,
+      "province": 1,
+      "province_name": "경기도",
+      "name": "양평군"
+    },
+    {
+      "id": 57,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "춘천시"
+    },
+    {
+      "id": 58,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "원주시"
+    },
+    {
+      "id": 59,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "강릉시"
+    },
+    {
+      "id": 60,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "동해시"
+    },
+    {
+      "id": 61,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "태백시"
+    },
+    {
+      "id": 62,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "속초시"
+    },
+    {
+      "id": 63,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "삼척시"
+    },
+    {
+      "id": 64,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "홍천군"
+    },
+    {
+      "id": 65,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "횡성군"
+    },
+    {
+      "id": 66,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "영월군"
+    },
+    {
+      "id": 67,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "평창군"
+    },
+    {
+      "id": 68,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "정선군"
+    },
+    {
+      "id": 69,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "철원군"
+    },
+    {
+      "id": 70,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "화천군"
+    },
+    {
+      "id": 71,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "양구군"
+    },
+    {
+      "id": 72,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "인제군"
+    },
+    {
+      "id": 73,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "고성군"
+    },
+    {
+      "id": 74,
+      "province": 2,
+      "province_name": "강원도",
+      "name": "양양군"
+    },
+    {
+      "id": 75,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "청주시"
+    },
+    {
+      "id": 76,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "충주시"
+    },
+    {
+      "id": 77,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "제천시"
+    },
+    {
+      "id": 78,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "보은군"
+    },
+    {
+      "id": 79,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "옥천군"
+    },
+    {
+      "id": 80,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "영동군"
+    },
+    {
+      "id": 81,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "증평군"
+    },
+    {
+      "id": 82,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "진천군"
+    },
+    {
+      "id": 83,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "괴산군"
+    },
+    {
+      "id": 84,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "음성군"
+    },
+    {
+      "id": 85,
+      "province": 3,
+      "province_name": "충청북도",
+      "name": "단양군"
+    },
+    {
+      "id": 86,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "세종시"
+    },
+    {
+      "id": 87,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "대전광역시"
+    },
+    {
+      "id": 88,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "천안시"
+    },
+    {
+      "id": 89,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "공주시"
+    },
+    {
+      "id": 90,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "보령시"
+    },
+    {
+      "id": 91,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "아산시"
+    },
+    {
+      "id": 92,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "서산시"
+    },
+    {
+      "id": 93,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "논산시"
+    },
+    {
+      "id": 94,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "계룡시"
+    },
+    {
+      "id": 95,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "당진시"
+    },
+    {
+      "id": 96,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "금산군"
+    },
+    {
+      "id": 97,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "부여군"
+    },
+    {
+      "id": 98,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "서천군"
+    },
+    {
+      "id": 99,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "청양군"
+    },
+    {
+      "id": 100,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "홍성군"
+    },
+    {
+      "id": 101,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "예산군"
+    },
+    {
+      "id": 102,
+      "province": 4,
+      "province_name": "충청남도",
+      "name": "태안군"
+    },
+    {
+      "id": 103,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "전주시"
+    },
+    {
+      "id": 104,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "군산시"
+    },
+    {
+      "id": 105,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "익산시"
+    },
+    {
+      "id": 106,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "정읍시"
+    },
+    {
+      "id": 107,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "남원시"
+    },
+    {
+      "id": 108,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "김제시"
+    },
+    {
+      "id": 109,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "완주군"
+    },
+    {
+      "id": 110,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "진안군"
+    },
+    {
+      "id": 111,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "무주군"
+    },
+    {
+      "id": 112,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "장수군"
+    },
+    {
+      "id": 113,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "임실군"
+    },
+    {
+      "id": 114,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "순창군"
+    },
+    {
+      "id": 115,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "고창군"
+    },
+    {
+      "id": 116,
+      "province": 5,
+      "province_name": "전라북도",
+      "name": "부안군"
+    },
+    {
+      "id": 117,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "목포시"
+    },
+    {
+      "id": 118,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "여수시"
+    },
+    {
+      "id": 119,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "순천시"
+    },
+    {
+      "id": 120,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "나주시"
+    },
+    {
+      "id": 121,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "광양시"
+    },
+    {
+      "id": 122,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "담양군"
+    },
+    {
+      "id": 123,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "곡성군"
+    },
+    {
+      "id": 124,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "구례군"
+    },
+    {
+      "id": 125,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "고흥군"
+    },
+    {
+      "id": 126,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "보성군"
+    },
+    {
+      "id": 127,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "화순군"
+    },
+    {
+      "id": 128,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "장흥군"
+    },
+    {
+      "id": 129,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "강진군"
+    },
+    {
+      "id": 130,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "해남군"
+    },
+    {
+      "id": 131,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "영암군"
+    },
+    {
+      "id": 132,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "무안군"
+    },
+    {
+      "id": 133,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "함평군"
+    },
+    {
+      "id": 134,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "영광군"
+    },
+    {
+      "id": 135,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "장성군"
+    },
+    {
+      "id": 136,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "완도군"
+    },
+    {
+      "id": 137,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "진도군"
+    },
+    {
+      "id": 138,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "신안군"
+    },
+    {
+      "id": 139,
+      "province": 6,
+      "province_name": "전라남도",
+      "name": "광주광역시"
+    },
+    {
+      "id": 140,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "포항시"
+    },
+    {
+      "id": 141,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "경주시"
+    },
+    {
+      "id": 142,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "김천시"
+    },
+    {
+      "id": 143,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "안동시"
+    },
+    {
+      "id": 144,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "구미시"
+    },
+    {
+      "id": 145,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "영주시"
+    },
+    {
+      "id": 146,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "영천시"
+    },
+    {
+      "id": 147,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "상주시"
+    },
+    {
+      "id": 148,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "문경시"
+    },
+    {
+      "id": 149,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "경산시"
+    },
+    {
+      "id": 150,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "군위군"
+    },
+    {
+      "id": 151,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "의성군"
+    },
+    {
+      "id": 152,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "청송군"
+    },
+    {
+      "id": 153,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "영양군"
+    },
+    {
+      "id": 154,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "영덕군"
+    },
+    {
+      "id": 155,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "청도군"
+    },
+    {
+      "id": 156,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "고령군"
+    },
+    {
+      "id": 157,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "성주군"
+    },
+    {
+      "id": 158,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "칠곡군"
+    },
+    {
+      "id": 159,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "예천군"
+    },
+    {
+      "id": 160,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "봉화군"
+    },
+    {
+      "id": 161,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "울진군"
+    },
+    {
+      "id": 162,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "울릉군"
+    },
+    {
+      "id": 163,
+      "province": 7,
+      "province_name": "경상북도",
+      "name": "대구광역시"
+    },
+    {
+      "id": 164,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "창원시"
+    },
+    {
+      "id": 165,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "진주시"
+    },
+    {
+      "id": 166,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "통영시"
+    },
+    {
+      "id": 167,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "사천시"
+    },
+    {
+      "id": 168,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "김해시"
+    },
+    {
+      "id": 169,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "밀양시"
+    },
+    {
+      "id": 170,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "거제시"
+    },
+    {
+      "id": 171,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "양산시"
+    },
+    {
+      "id": 172,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "의령군"
+    },
+    {
+      "id": 173,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "함안군"
+    },
+    {
+      "id": 174,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "창녕군"
+    },
+    {
+      "id": 175,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "고성군"
+    },
+    {
+      "id": 176,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "남해군"
+    },
+    {
+      "id": 177,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "하동군"
+    },
+    {
+      "id": 178,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "산청군"
+    },
+    {
+      "id": 179,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "함양군"
+    },
+    {
+      "id": 180,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "거창군"
+    },
+    {
+      "id": 181,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "합천군"
+    },
+    {
+      "id": 182,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "부산광역시"
+    },
+    {
+      "id": 183,
+      "province": 8,
+      "province_name": "경상남도",
+      "name": "울산광역시"
+    }
+  ]
+}
