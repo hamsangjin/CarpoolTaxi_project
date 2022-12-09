@@ -102,7 +102,7 @@ function CarpoolPost() {
     // setBoards((prev) => {
     //   return prev.concat(newBoard);
     // });
-    const fetchApi = await fetch("http://localhost:5000/api/board", {
+    const fetchApi = await fetch("http://localhost:5000/api/carpoolboard", {
       method: "PUT",
       body: JSON.stringify({
         ...newBoard,

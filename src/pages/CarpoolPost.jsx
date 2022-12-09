@@ -10,14 +10,14 @@ function CarpoolPost() {
   const [isFill, setIsFill] = useState(false);
   const [values, setValues] = useState({
     title: "",
-    departures: "",
-    arrivals: "",
-    departureTime: "",
-    type: "driver",
-    totalPassengers: "",
-    carType: "",
+    startDetail: "",
+    arrivalDetail: "",
+    date:"",
+    time: "",
+    driver: "driver",
+    maxPassenger: "",
+    car: "",
     content: "",
-    currentPassengers: 0,
   });
   const navigate = useNavigate();
 
@@ -49,7 +49,7 @@ function CarpoolPost() {
       "title",
       "departures",
       "arrivals",
-      "departureTime",
+      "departureTime", // 나눠야함
       "type",
       "totalPassengers",
       "content",
@@ -66,13 +66,13 @@ function CarpoolPost() {
     navigate("/carpool");
     const currentOption = { ...selectedOption, ...values };
     const newBoard = {
-      id: boards.length,
+      id: boards.length, // 자동으로 생성될거고
       ...currentOption,
     };
     // setBoards((prev) => {
     //   return prev.concat(newBoard);
     // });
-    const fetchApi = await fetch("http://localhost:5000/api/board", {
+    const fetchApi = await fetch("http://localhost:5000/api/carpoolboard", {
       method: "POST",
       body: JSON.stringify({
         ...newBoard,

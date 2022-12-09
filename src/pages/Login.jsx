@@ -49,6 +49,8 @@ function Login() {
     try {
       const { data } = await client.post('/login', values);
       localStorage.setItem('currentUserId', JSON.stringify(data));
+      localStorage.setItem('idx', String(values.id));
+      console.log(data);
       navigate('/');
     } catch (err) {
       setError('ID 또는 PW가 올바르지 않습니다.');

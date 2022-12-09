@@ -10,7 +10,8 @@ function PassengerList(props){
     const [passengerInfo,setpassengerInfo] = useState([]);
 
     // 게시글 권한 정보(접속한 사람id)
-    const userId = localStorage.getItem['currentUserId'];
+    const rawData = localStorage.getItem('currentUserId');
+    const userId = JSON.parse(rawData).id;
 
     /* 개발할 때 CarpoolInfo와 같은 userId인지 확인하면서 개발할 것 */
     // const userId = '2018250033'; // 임시 사용 // 게시글 작성자 역할
@@ -27,7 +28,7 @@ function PassengerList(props){
         })
         .then(data=>{
             setpassengerInfo(data[0]);
-            console.log("passengerinfo:",data[0]);
+            // console.log("passengerinfo:",data[0]);
         })
     },[passengerId])
 

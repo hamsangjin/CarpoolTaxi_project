@@ -70,7 +70,7 @@ function Taxi(){
         {currentBoards.map((board) => (
           <TaxiThumbnail key={board.id} boardInfo={board} 
           passengerList={passengerList.filter(i =>{
-            return i.boardId === board.id;
+            return i.boardId == board.id;
           })}
           />
         ))}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useId } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 // import axios from "axios";
 import PassengerList from "../components/PassengerList";
@@ -24,8 +24,9 @@ function CarpoolInfo() {
     phoneNum: "init phoneNum"
     });
 
-  // 게시글 권한 정보(접속한 사람id)
-  const userId = localStorage.getItem["currentUserId"];
+  // 게시글 권한 정보(접속한 사람id);
+  const rawData = localStorage.getItem('currentUserId');
+  const userId = JSON.parse(rawData).id;
 
   /* 개발할 때 PassengerList와 같은 userId인지 확인하면서 개발할 것 */
   // const userId = '2018250033'; // 임시 사용 // 게시글 작성자 역할
@@ -85,14 +86,14 @@ function CarpoolInfo() {
   // 동승 신청 버튼
   const addPassenger = (e)=>{
       e.preventDefault();
-
+      
       // body에 들어갈 내용
       const info = {
           "id": boardId+userId, // 임시 기본키
     "boardId": boardId,
           "userId": userId
   }
-
+     console.log('ddd', info);
       // fetch(`http://localhost:3001/passenger`,{
       fetch("http://localhost:5000/api/carpoolpassenger",{
   method: 'POST',
@@ -289,6 +290,7 @@ const StyledButton = styled(BasicButton)`
 width: ${(props) => props.width};
 height: ${(props) => props.height};
 font-size: 16px;
+background: ${(props) => (props.disabled === "disable" ? "#BCBCBC" : "#FF9C2C")}
 `;
 const ContentWrapper = styled.div`
 margin: auto;

@@ -26,6 +26,11 @@ export default function Main() {
     }
   }, [navigate]);
 
+  const onLogout = () => {
+    localStorage.removeItem('currentUserId');
+    navigate('/login');
+  };
+
   return (
     <MainContainer>
       <NavBar />
@@ -36,7 +41,7 @@ export default function Main() {
           <ImgText>TAXI</ImgText>
           <CarPoolBtn onClick={(e) => onClickBtn(e, 'carPool')} />
           <TaxiBtn onClick={(e) => onClickBtn(e, 'taxi')} />
-          <MyInfoBtn onClick={(e) => onClickBtn(e, 'myInfo')} />
+          <MyInfoBtn onClick={onLogout} />
         </ButtonContainer>
       </BodyContainer>
     </MainContainer>
@@ -46,7 +51,7 @@ const MyInfoBtn = styled.button`
   margin-top: 10px;
   background-size: 320px;
   width: 310px;
-  background-image: url('./assets/MyInfoLogo.png');
+  background-image: url('./assets/logout.png');
   height: 70px;
 `;
 const ImgText = styled.p`

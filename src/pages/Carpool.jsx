@@ -66,13 +66,11 @@ function Carpool() {
         <StyledLink to="/carpool/post">글쓰기</StyledLink>
       </InnerNavBarWrapper>
       <BoardWrapper>
-        {currentBoards.map((board) => (
-          <Thumbnail key={board.id} boardInfo={board} 
-          passengerList={passengerList.filter(i =>{
-            return i.boardId === board.id;
-          })}
-          />
-        ))}
+        {currentBoards.map((board) => {
+          const temp = passengerList.filter(i => i.boardId == board.id);
+          console.log(temp);
+          return <Thumbnail key={board.id} boardInfo={board} passengerList={temp}/>
+        })}
       </BoardWrapper>
     </CarpoolWrapper>
   );

@@ -23,7 +23,7 @@ function Thumbnail(props) {
 
         </ContentWrapper>
         <PickUpInfo>
-          <div>{boardInfo.type === "driver" ? "탑승인원" : "픽업하기"}</div>
+          <div>{boardInfo.driver === "driver" ? "탑승인원" : "픽업하기"}</div>
           <div>
             {boardInfo.driver === "driver"
               ? <div> {passengerList.length} / {boardInfo.maxPassenger}</div>

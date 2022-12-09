@@ -9,12 +9,8 @@ function TaxiPassengerList(props) {
   const [passengerInfo, setpassengerInfo] = useState([]);
 
   // 게시글 권한 정보(접속한 사람id)
-  const userId = localStorage.getItem['currentUserId'];
-
-  /* 개발할 때 CarpoolInfo와 같은 userId인지 확인하면서 개발할 것 */
-  // const userId = '2018250033'; // 임시 사용 // 게시글 작성자 역할
-  // const userId = "2018250233"; // 임시 사용 // 외부인 역할 - 동승신청 클릭
-  // const userId = '2022330044'; // 임시 사용 // 동승자 역할
+  const rawData = localStorage.getItem('currentUserId');
+  const userId = JSON.parse(rawData).id;
 
   useEffect(() => {
     // 댓글 주인의 회원 정보 가져오기
