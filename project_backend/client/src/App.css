@@ -1,0 +1,42 @@
+/* .App {
+  text-align: center;
+} */
+.loginMain {
+  margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.header{
+  margin: auto;
+    width: 50%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.mainPage{
+  margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+textarea{
+  width:500px;
+  height: 300px;
+}
+.Board{
+  background-color: darkkhaki;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #73AD21 ;
+  padding: 20px;
+}
+.commentsDiv{
+  background-color: darkkhaki;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #73AD21 ;
+  padding: 20px;
+}
+
+
